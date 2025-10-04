@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AMAZON ECHO DOT - SmartHome</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="commerce.css" />
+</head>
+<body>
+    <video autoplay muted loop playsinline class="bg-video">
+    <source src="4799815-hd_1920_1080_30fps.mp4" type="video/mp4">
+  </video>
+
+<nav class="navbar navbar-expand-lg navbar-dark shadow">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-3" href="ecommerce.html">SmartHome</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="ecommerce.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="product.html" class="nav-link">Products</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container my-5">
+  <div class="row">
+  
+    <div class="col-lg-5 mb-4">
+      <img src="speaker.jpg" alt=".." id="mainProductImg" class="product-main-image shadow-sm" />
+      <div class="thumbnail-images d-flex mt-3">
+        <img src="speaker 2.jpg" alt="..." class="active" onclick="changeImage(this)" />
+        <img src="speaker 3.avif" alt="..." onclick="changeImage(this)" />
+        <img src="speaker 4.jpg" alt="..." onclick="changeImage(this)" />
+      </div>
+    </div>
+
+    
+    <div class="col-lg-7 product-info text-white">
+      <h1>AMAZON ECHO DOT</h1>
+
+      <div class="d-flex align-items-center mb-3">
+        <div class="star-rating me-2">★★★★☆</div>
+        <div>(150 customer reviews)</div>
+      </div>
+
+      <p class="price">$40.99</p>
+
+      <h5>Key Features</h5>
+      <ul>
+        <li>Compact spherical design with fabric and matte finish</li>
+        <li>Built-in Alexa for voice commands and smart home control</li>
+        <li>Dual-band Wi-Fi (802.11 a/b/g/n/ac) support</li>
+        <li>Ambient temperature sensor for smart home routines</li>
+        <li>Supports English and Hindi voice commands (region-specific)</li>
+      </ul>
+
+      <form class="d-flex align-items-center mt-4 gap-3" onsubmit="event.preventDefault(); alert('Added to cart!');">
+        <label for="quantity" class="form-label mb-0 fw-semibold">Quantity:</label>
+        <input type="number" id="quantity" class="form-control quantity-input" value="1" min="1" max="10" />
+        <button type="submit" class="btn btn-buy px-4">Add to Cart</button>
+         <a class="btn btn-buy px-4" href="product2.html">Next Product</a>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer class="py-4 bg-dark text-white text-center">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 SmartHome Store. All rights reserved.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
